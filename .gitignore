@@ -1,3 +1,5 @@
+.DS_Store
+
 # Built application files
 android/android_inmobi/*.apk
 android/android_inmobi/*.ap_

@@ -88,7 +88,7 @@ class Impression {
     public $slot;
 
     function __construct($s) {
-        $slot = $s;
+        $this->slot = $s;
     }
     static function getImpressionObjectWithSlot($s) {
         $imp = new Impression();
@@ -201,9 +201,8 @@ class Device {
     public $adTrackingDisabled;
 
     function __construct($carrierIP,$userAgent) {
-
-        $carrierIP = $carrierIP;
-        $userAgent = $userAgent;
+        $this->carrierIP = $carrierIP;
+        $this->userAgent = $userAgent;
         $gpId = null;
         $androidId = null;
         $idfa = null;

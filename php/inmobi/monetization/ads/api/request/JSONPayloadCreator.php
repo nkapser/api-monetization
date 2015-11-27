@@ -108,7 +108,7 @@ class JSONPayloadCreator {
 	private static function getDeviceJson($device) {
 		$deviceArray = array();
 		$deviceArray['ip'] = $device->carrierIP;
-		$deviceArray['ua'] = $device->userAgent;
+		$deviceArray['ua'] = htmlspecialchars($device->userAgent, ENT_QUOTES);
 
 		//anddroid identifiers
 		$gpid = $device->gpId;
